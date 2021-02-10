@@ -1,0 +1,278 @@
+html * {
+    font-family: Sahel, serif !important;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    filter: invert(1) hue-rotate(180deg);
+    height: 100%;
+}
+
+#nav-container {
+    background-color: rgb(231, 239, 248);
+    /*flex-wrap: nowrap;*/
+    position: fixed;
+    /*alignment: center;*/
+}
+
+.logo-img {
+    height: 100px;
+    width: 100px;
+    flex-wrap: nowrap;
+}
+
+
+/*.container-fluid {*/
+
+
+/*    width: 100%;*/
+
+
+/*}*/
+
+@media (max-width: 600px) {
+    #nav-container {
+        height: 100px;
+    }
+    #reg-btn {
+        display: none;
+    }
+    #login-btn {
+        display: none;
+    }
+    #home-data {
+        display: none;
+    }
+    #logo-flex {
+        padding: 0;
+        margin-top: -55px;
+    }
+    #wrapper {
+        visibility: hidden;
+    }
+    .table-container {
+        display: none;
+    }
+    .grid-container>div {
+        height: 200px;
+        width: 200px;
+        background-color: #008CBA;
+    }
+    .idk {
+        display: flex;
+    }
+}
+
+#first_menu {
+    font-weight: bold;
+}
+
+#night-mode {
+    padding-right: 20px;
+}
+
+.menu-header {
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+#first_container {
+    padding-top: 40px;
+    padding-right: 40px;
+    direction: rtl;
+    grid-row-gap: 30px;
+}
+
+#menu {
+    color: white;
+}
+
+.list-item {
+    padding-right: 40px;
+}
+
+#login-btn {
+    /*background-color: white; !* Green *!*/
+    background-color: white;
+    color: black;
+    border: 3px solid #067cb5;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-flex;*/
+    /*flex-wrap: nowrap;*/
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#login-btn:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+#reg-btn {
+    background-color: #006aaa;
+    /* Green */
+    border: 3px solid #067cb5;
+    color: white;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#reg-btn:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+#wrapper {
+    padding-left: 0;
+    position: relative;
+}
+
+.nav {
+    flex-wrap: wrap;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 300px;
+    height: 110%;
+    width: 0;
+    margin-top: initial;
+    color: white;
+    margin-right: -300px;
+    overflow-y: auto;
+    background: #006aaa;
+    display: inline-block;
+    /*-webkit-transition: all 0.5s ease;*/
+    /*-moz-transition: all 0.5s ease;*/
+    /*-o-transition: all 0.5s ease;*/
+    /*transition: all 0.5s ease;*/
+}
+
+#wrapper {
+    padding-right: 300px;
+    position: fixed;
+}
+
+#wrapper-container {}
+
+#sidebar-wrapper {
+    width: 300px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    float: left;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    display: none;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    height: 15px;
+    width: 38px;
+    top: 8px;
+    left: 0;
+    right: 80px;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input.primary:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/*Grid style*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 20px;
+    height: 100%;
+    grid-column-gap: -100px;
+    padding-left: 0px;
+}
+
+#grid {
+    background-color: white;
+}
+
+.grid-container>div {
+    height: 340px;
+    width: 340px;
+    font-size: 30px;
+}
+
+.table-container {}
+
+.table-header {
+    background-color: #067cb5;
+}
+
+.table-even {
+    background-color: rgb(231, 239, 248);
+}
+
+.idk {}
+
+@media (min-width: 599.98px) {
+    .idk {
+        display: none;
+    }
+}
